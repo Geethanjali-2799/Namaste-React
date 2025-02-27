@@ -1,0 +1,23 @@
+Emmet--> vs code has this which helps in generating code for user.
+
+A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.
+What is crossorigin in React CDN?
+In ReactJS, Cross-Origin Resource Sharing or CORS requests refers to the method that allows you to make requests to the server deployed at a different domain.
+Why do we write crossorigin in React?
+Why? Because when your React app tries to fetch data from your API, it's making a cross-origin request. And unless your backend server is set up to accept requests from your React app's origin, the browser will block these requests due to the Same Origin Policy.
+
+In React , Order of files must be used in order. as hirerarchy needs to be followed since present file needs some that will be present in previous file.
+
+React.createElement(element u want to create, {here attributes for this element is written}, if it is one element "the text to keep inside element is present" if there are morethan one statements then keep them in array [,,,])
+render()--> is a method used to convert the object created by createElement() into an element of html
+        --> Also render replaces if anything already present inside that particular element of html which we chooses to run as root
+
+
+What is Emmet?
+● Difference between a Library and Framework?
+● What is CDN? Why do we use it?
+● Why is React known as React?
+● What is crossorigin in script tag?
+● What is diference between React and ReactDOM
+● What is difference between react.development.js and react.production.js files via CDN?
+● What is async and defer?
