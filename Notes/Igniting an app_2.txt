@@ -1,0 +1,42 @@
+npm : is a package manager
+    : it is a standard repository for all Packages(...).
+
+npm init ------> install package.json into current working directory
+
+package.json --> is a configuration file for npm
+             --> NEEDED FOR-->managing dependencies
+
+package1:  bundler-->bundles/packages ur app so that u can ship to production
+
+bundler(webpack,wheat,parcel)-->choose parcel for creating dependencies
+
+2 dependencies can be installed--> normal dependencies(both development and production) and Dev dependencies(require during development)
+PARCEL:
+    parceljs is open source javascript tool that bundles web applications
+    npm install -D parcel ----> Dev dependencies
+    --> ^(caret) --> parcel updates its version automatically to latest if it is minor version, prefer using caret 
+    --> ~(tidler) --> install major version automatically
+    after this cmd ran package-locj.json file is created
+    and also node modules folder is created  (this has all code of parcel)--> is kind od database for dependencies
+
+Package.json(keeps approx version of packages that are being installed) vs Package-lock.json(keeps track of exact versions of all packages which is installed)
+This package-lock.json file is very imp that it helps to maintain exact version when application is sent to production
+
+alone using package.json and package-lock.json we can recreate node modules usin npm install so we can ignore sharing node modules to git
+
+npx-->for executing a package npx is used
+ 
+npx parcel index.html ---> here we r executing parcel=======> for development
+npx parcel build index.html =======> for production
+
+What does parcel/any bundler do?
+--> It provides DEV Build
+--> provides local server
+--> HMR -- hot module replacement --> when a file is updated and saved it automatically the page is refreshed -- this is done with hmr by parcel
+    all these are kept track by Parcel, it uses File watching algorith (written in c++) 
+--> Parcel is doing Caching --for faster builds
+--> image optimization
+--> minify the file size--> by using some libraries
+--> Bundling
+--> compressing
+

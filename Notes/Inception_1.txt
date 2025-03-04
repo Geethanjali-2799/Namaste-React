@@ -28,14 +28,14 @@ Git Update:
 
 
 or create a new repository on the command line
-echo "# Namaste_React" >> README.md
+echo "# Namaste-React" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Geethanjali-2799/Namaste_React.git
+git remote add origin https://github.com/Geethanjali-2799/Namaste-React.git
 git push -u origin main
 …or push an existing repository from the command line
-git remote add origin https://github.com/Geethanjali-2799/Namaste_React.git
+git remote add origin https://github.com/Geethanjali-2799/Namaste-React.git
 git branch -M main
 git push -u origin main
