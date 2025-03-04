@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Project using React",
   "scripts": {
+    "devbuild": "parcel index.html",
+    "prodbuild": "parcel build index.html",
     "test": "jest"
   },
   "repository": {

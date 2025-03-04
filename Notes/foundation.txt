@@ -1,0 +1,65 @@
+Instead of running the npx parcel index.html we can use scripts to make it easy
+
+in package.json --> scripts --> "any name u wish" : "command"   [ex: "devbuild" : "parcel index.html" ]
+
+Then in termina u can run the following 
+        npm run devbuild  (or) npm devbuild ----> for development
+        npm run prodbuild  ---> for production
+
+React Element:
+    what is react element? --> it is an object but not html element
+    This is used to create html elements but for displaying on screen we use ReactDOM by rendering react element
+
+JSX: Javascript syntax
+    To avoid complex writing of react elements, facebook created this JSX
+    Also react can be written without JSX--> react and JSX are different
+    JSX is a react element
+    what is JSX?
+        JSX is HTML like syntax but it is not HTML
+    JSX is transpiled into react element where this object is then rendered to an html element
+    Need to use Camelcase while writing attributes inside tags in jsx ex: className
+    if jsx code is multiple lines then enclose it in (), if it is single line ignore braces
+ECMAscript
+    js engine doesnot understand JSX but the engine can understand this ECMAscript, 
+    latest version of Javascript is es6
+
+BABEL:
+    A Javascript compiler
+    not created by facebook
+    it is a library
+    a package installed by parcel
+    it does transpilation of JSX code into a language that browsers and js engine can understand
+
+React component:
+    2 types:
+        Class based component---older version
+        Functional component---newer version
+    footers, headings, click buttons everything comes under componenets
+    React functional component--> is a nrml javascript component
+                             ---> is a function that returns jsx code/react element is functional component
+                             ---> first letter of functional component must be capital letter so that react understand it is functional component
+    ex: const Fn = () => { return true};
+                    can also be written as
+        const fn = () => true;
+    multiple lines to be written without return in jsx then enclose them in ()
+
+    render this componenet in the following way 
+                    root.render(<component name />)
+        where react element is rendered in following way
+                    root.render(react element name)
+    
+    componenet composition:
+        composing 2 components into one another
+
+
+    Inside jsx code we can include js expressions or elements in {}
+
+    if any malicious activity might be happen due to the elements in {} then jsx takes care of it automatically
+
+    const Headingcomponent = () =>(
+        <div id="heading">
+            <Titlecomponent/> or {Titlecomponent()}
+            {initial}
+            <h4>This is component composition</h4>
+        </div>
+    )
