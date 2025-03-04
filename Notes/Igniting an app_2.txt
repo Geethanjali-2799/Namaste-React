@@ -29,6 +29,8 @@ npx-->for executing a package npx is used
 npx parcel index.html ---> here we r executing parcel=======> for development
 npx parcel build index.html =======> for production
 
+npm install react ------> to install react inside package.json file
+npm install react-dom ----> to also install react dom package
 What does parcel/any bundler do?
 --> It provides DEV Build
 --> provides local server
@@ -40,3 +42,5 @@ What does parcel/any bundler do?
 --> Bundling
 --> compressing
 
+
+Browserslist---> to allow how many versions of browsers can be allowed
